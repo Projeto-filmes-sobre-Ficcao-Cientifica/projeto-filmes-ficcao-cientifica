@@ -31,5 +31,3 @@ O principal objetivo deste projeto é servir como uma **atividade prática para 
 - Metrópolis
 - Contatos Imediatos de Terceiro Grau
 ---
-
-Desenvolvido como atividade prática para aprendizagem de **Git Bash** e versionamento de código com **Git**.
