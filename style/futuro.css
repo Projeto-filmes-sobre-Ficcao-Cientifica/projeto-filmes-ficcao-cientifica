@@ -42,3 +42,92 @@ button:hover {
     background-color: #4c3838;
 }
 
+/* ========================================= */
+/*     MODAIS - DE VOLTA PARA O FUTURO        */
+/* ========================================= */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 9999;
+}
+
+/* Posiciona o modal no canto superior direito */
+.modal.active {
+    display: flex !important;
+    justify-content: flex-end; /* Encosta na direita */
+    align-items: flex-start;  /* Encosta no topo */
+}
+
+.modal-content {
+    margin: 30px 30px 0 0; /* Distância das bordas da tela */
+    padding: 30px;
+    width: 90%; 
+    max-width: 450px;
+    background-color: #111116;
+    font-family: "Montaga", serif; 
+    position: relative;
+    
+    /* Formato Recortado Assimétrico (Estilo Cyber/Futurista) */
+    border-radius: 0;
+    clip-path: polygon(
+        20px 0%, 100% 0%, 
+        100% calc(100% - 20px), calc(100% - 20px) 100%, 
+        0% 100%, 0% 20px
+    );
+}
+
+/* Modal 1: Estilo Laranja Neon (Circuito do Tempo) */
+.modal-neon-orange {
+    border-top: 3px solid #ff4500;
+    border-bottom: 3px solid #ff4500;
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.5);
+}
+
+.modal-neon-orange h2 {
+    color: #ff4500;
+}
+
+/* Modal 2: Estilo Azul Neon (Raio de 1.21 Gigawatts) */
+.modal-neon-blue {
+    border-top: 3px solid #00d2ff;
+    border-bottom: 3px solid #00d2ff;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+}
+
+.modal-neon-blue h2 {
+    color: #00d2ff;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modal-content p {
+    color: #f0f0f0;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #e42a2a;
+}
