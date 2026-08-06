@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matriz</title>
+    <title>Matrix</title>
     <link rel="stylesheet" href="/style/matriz.css">
+    <script src="/script/matrix.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <h1>Matriz</h1>
-        <button id="btn-advice">Sinopse</button>
-        <button id="btn-advice">Diretor</button>
+        <h1>Matrix</h1>
+        <!-- IDs corrigidos para a manipulação no JS -->
+        <button id="btn-sinopse">Sinopse</button>
+        <button id="btn-diretor">Diretor</button>
+    </div>
+
+    <!-- MODAL 1: Sinopse -->
+    <div id="modal-sinopse" class="modal">
+        <div class="modal-content modal-matrix-terminal">
+            <div class="terminal-header">[SYSTEM_LOG // SINOPSE]</div>
+            <h2>Sinopse</h2>
+            <p>O programador Thomas Anderson, conhecido como Neo, é atormentado por estranhos pesadelos. Ele descobre que a realidade que conhece é uma simulação computadorizada criada por máquinas inteligentes, e junta-se a Morpheus e Trinity na revolução humana.</p>
+            <button class="close-btn" id="close-sinopse">&gt; DESCONECTAR</button>
+        </div>
+    </div>
+
+    <!-- MODAL 2: Diretor -->
+    <div id="modal-diretor" class="modal">
+        <div class="modal-content modal-matrix-terminal">
+            <div class="terminal-header">[SYSTEM_LOG // DIREÇÃO]</div>
+            <h2>Lana e Lilly Wachowski</h2>
+            <p>As irmãs Lana e Lilly Wachowski são cineastas e roteiristas americanas visionárias. Em 1999, revolucionaram a indústria do cinema e os efeitos visuais com o lançamento de 'Matrix', um dos maiores marcos da ficção científica cyberpunk.</p>
+            <button class="close-btn" id="close-diretor">&gt; DESCONECTAR</button>
+        </div>
     </div>
 
 </body>
 </html>
-
