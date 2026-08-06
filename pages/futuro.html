@@ -5,16 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De volta pro Futuro</title>
     <link rel="stylesheet" href="/style/futuro.css">
+    <script src="/script/futuro.js" defer></script>
 </head>
 <body>
     <div class="botao">
-        <button id="btn-advice">Sinopse</button>
-        <button id="btn-advice">Diretor</button>
+        <!-- IDs corrigidos para não haver duplicação -->
+        <button id="btn-sinopse">Sinopse</button>
+        <button id="btn-diretor">Diretor</button>
     </div>
 
     <main class="container">
         <h1>De volta pro Futuro</h1>
     </main>
+
+   
+    <div id="modal-sinopse" class="modal">
+        <div class="modal-content modal-neon-orange">
+            <span class="close-btn" id="close-sinopse">&times;</span>
+            <h2>Sinopse</h2>
+            <p>Marty McFly, um adolescente dos anos 80, é acidentalmente enviado de volta no tempo para 1955 a bordo de um DeLorean modificado pelo cientista Doc Brown. Ele precisa fazer com que seus futuros pais se apaixonem para salvar sua própria existência.</p>
+        </div>
+    </div>
+
+   
+    <div id="modal-diretor" class="modal">
+        <div class="modal-content modal-neon-blue">
+            <span class="close-btn" id="close-diretor">&times;</span>
+            <h2>Robert Zemeckis</h2>
+            <p>Robert Zemeckis é um aclamado diretor e roteirista norte-americano, mestre no uso de efeitos visuais. Lançou 'De Volta para o Futuro' em 1985, transformando a saga em uma das franquias de maior sucesso na história da ficção científica.</p>
+        </div>
+    </div>
 
 </body>
 </html>
