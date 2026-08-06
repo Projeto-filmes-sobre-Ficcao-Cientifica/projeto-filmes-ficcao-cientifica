@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos Imediatos do Terceiro Grau</title>
     <link rel="stylesheet" href="/style/contato.css">
+    <script src="/script/contato.js" defer></script>
 </head>
 <body>
+
+    <header class="site-header">
+      <div class="header-buttons">
+        <button id="btn-sinopse" class="btn-login">Sinopse</button>
+        <button id="btn-diretor" class="btn-cta">Diretor</button>
+      </div>
+    </header>
+
     <main class="container">
         <h1>Contatos Imediatos do Terceiro Grau</h1>
     </main>
 
-<header class="site-header">
-  <div class="header-buttons">
-    <button class="btn-login">Sinopse</button>
-    <button class="btn-cta">Diretor</button>
-  </div>
-</header>
+    <!-- MODAL 1: Sinopse -->
+    <div id="modal-sinopse" class="modal">
+        <div class="modal-content modal-sinopse-theme">
+            <button class="close-btn" id="close-sinopse">&times;</button>
+            <h2>Sinopse</h2>
+            <p>Roy Neary, um eletricista comum de Indiana, tem sua vida transformada após presenciar a passagem de um OVNI. Obcecado por uma visão recorrente de uma montanha, ele busca respostas e junta-se a outros que tiveram a mesma experiência em direção a um ponto de encontro épico com inteligências extraterrestres.</p>
+        </div>
+    </div>
+
+    <!-- MODAL 2: Diretor -->
+    <div id="modal-diretor" class="modal">
+        <div class="modal-content modal-diretor-theme">
+            <button class="close-btn" id="close-diretor">&times;</button>
+            <h2>Steven Spielberg</h2>
+            <p>Considerado um dos diretores mais influentes da história do cinema, Steven Spielberg consagrou-se com clássicos do suspense, aventura e ficção científica. Em 1977, escreveu e dirigiu 'Contatos Imediatos do Terceiro Grau', tornando-o um marco na representação de encontros alienígenas.</p>
+        </div>
+    </div>
 
 </body>
 </html>
