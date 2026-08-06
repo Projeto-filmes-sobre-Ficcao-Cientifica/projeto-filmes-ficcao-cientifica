@@ -58,3 +58,87 @@ button {
 button:hover {
     background-color: #535151;
 }
+/* ========================================= */
+/*         MODAIS - METRÓPOLIS (ART DÉCO)    */
+/* ========================================= */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(10, 10, 10, 0.9); 
+    z-index: 9999;
+}
+
+.modal.active {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Art Déco com entrada animada */
+.modal-art-deco {
+    background: linear-gradient(145deg, #181818, #0a0a0a);
+    padding: 35px 30px 25px 30px;
+    border: 2px solid #d4af37; /* Borda dourada/latão */
+    outline: 1px solid #7a621e;
+    outline-offset: -6px; /* Efeito de borda dupla estilo Art Déco */
+    border-radius: 2px; /* Cantos retos/geométricos */
+    width: 85%; 
+    max-width: 520px;
+    font-family: "Montaga", serif; 
+    position: relative;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    transform: translateY(-20px) scale(0.95);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal.active .modal-art-deco {
+    transform: translateY(0) scale(1);
+}
+
+.modal-art-deco h2 {
+    margin-top: 0;
+    font-size: 30px;
+    color: #d4af37;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    border-bottom: 2px dashed #d4af37;
+    padding-bottom: 12px;
+}
+
+.modal-art-deco p {
+    color: #e2e2e2;
+    line-height: 1.7;
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+/* Botão FECHAR estilizado no rodapé da caixa */
+.close-btn {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 38px;
+    background-color: #d4af37;
+    color: #000000;
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+.close-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transform: scale(1.05);
+}
