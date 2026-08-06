@@ -142,3 +142,23 @@ button:hover {
     color: #000000;
     transform: scale(1.05);
 }
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 480px;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+/* Cria o triângulo do balão */
+.modal-content::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 40px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #181818; /* Mesma cor do background do modal */
+}
