@@ -58,9 +58,6 @@ button {
 button:hover {
     background-color: #535151;
 }
-/* ========================================= */
-/*         MODAIS - METRÓPOLIS (ART DÉCO)    */
-/* ========================================= */
 
 .modal {
     display: none; 
@@ -75,10 +72,13 @@ button:hover {
 
 .modal.active {
     display: flex !important;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end; /* Alinha na direita */
+    align-items: flex-end;     /* Alinha no fundo */
 }
 
+.modal-content {
+    margin: 0 20px 20px 0;    /* Afasta da borda inferior e direita */
+}
 /* Modal Art Déco com entrada animada */
 .modal-art-deco {
     background: linear-gradient(145deg, #181818, #0a0a0a);
