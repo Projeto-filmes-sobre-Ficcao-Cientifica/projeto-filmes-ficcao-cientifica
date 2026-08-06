@@ -131,3 +131,90 @@ button:hover {
 .close-btn:hover {
     color: #e42a2a;
 }
+/* ========================================= */
+/*         MODAIS - MATRIX (TERMINAL)         */
+/* ========================================= */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(0, 5, 0, 0.85); 
+    z-index: 9999;
+}
+
+/* Posiciona o modal no canto inferior esquerdo (Estilo Prompt de Comando) */
+.modal.active {
+    display: flex !important;
+    justify-content: flex-start; /* Encosta na esquerda */
+    align-items: flex-end;      /* Encosta no fundo */
+}
+
+.modal-matrix-terminal {
+    margin: 0 0 30px 30px; /* Distância da borda inferior e esquerda */
+    padding: 25px 30px;
+    width: 90%; 
+    max-width: 480px;
+    background-color: #030a04;
+    border: 2px solid #00ff41; /* Verde Matrix */
+    font-family: "Montaga", serif; 
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+    
+    /* Recorte nas pontas estilo terminal futurista */
+    clip-path: polygon(
+        0 15px, 15px 0, 
+        100% 0, 100% calc(100% - 15px), 
+        calc(100% - 15px) 100%, 0 100%
+    );
+}
+
+.terminal-header {
+    font-family: monospace;
+    font-size: 12px;
+    color: #00ff41;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.modal-matrix-terminal h2 {
+    margin-top: 0;
+    font-size: 26px;
+    color: #ffffff;
+    border-bottom: 1px dashed #00ff41;
+    padding-bottom: 8px;
+    font-family: monospace;
+}
+
+.modal-matrix-terminal p {
+    color: #c2f5cc;
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* Botão DESCONECTAR estilizado */
+.close-btn {
+    display: inline-block;
+    background-color: #00ff41;
+    color: #000000;
+    border: none;
+    padding: 8px 16px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+.close-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 15px #ffffff;
+}
