@@ -58,3 +58,81 @@ button {
 button:hover {
     background-color: #535151;
 }
+
+.modal {
+    display: none !important; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(5, 10, 25, 0.85); 
+    z-index: 9999;
+}
+
+.modal.active {
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-end; 
+}
+
+.modal-content.modal-terminator {
+    margin-bottom: 25px;
+    width: 90%;
+    max-width: 500px;
+    background-color: #0d111a;
+    border: 2px solid #0026ff;
+    border-top: 3px solid #ff0000; 
+    padding: 25px 30px;
+    box-shadow: 0 0 25px rgba(0, 38, 255, 0.4);
+    position: relative;
+    font-family: "Montaga", serif;
+    
+    clip-path: polygon(
+        15px 0, calc(100% - 15px) 0, 
+        100% 15px, 100% calc(100% - 15px), 
+        calc(100% - 15px) 100%, 15px 100%, 
+        0 calc(100% - 15px), 0 15px
+    );
+}
+
+.hud-status {
+    font-family: monospace;
+    font-size: 11px;
+    color: #ff3333;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.modal-terminator h2 {
+    margin-top: 0;
+    font-size: 26px;
+    color: #ffffff;
+    border-bottom: 1px dashed #0026ff;
+    padding-bottom: 8px;
+}
+
+.modal-terminator p {
+    color: #d1d9e6;
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 15px 0 20px 0;
+}
+
+.close-btn {
+    background-color: #0026ff;
+    color: #ffffff;
+    border: none;
+    padding: 9px 20px;
+    font-family: "Montaga", serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 38, 255, 0.5);
+}
+
+.close-btn:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    box-shadow: 0 0 15px #ff0000;
+}

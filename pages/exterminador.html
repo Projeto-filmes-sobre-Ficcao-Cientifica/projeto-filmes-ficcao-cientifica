@@ -1,16 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Exterminador do Futuro 2 </title>
+    <title>O Exterminador do Futuro 2</title>
     <link rel="stylesheet" href="/style/exterminador.css">
+    <script src="/script/exterminador.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <button id="btn-advice">Sinopse</button>
-        <h1>O Exterminador do Futuro 2 </h1>
-        <button id="btn-advice">Diretor</button>
+        <div class="botao">
+            <button id="btn-sinopse">Sinopse</button>
+             <div class="container">
+        <h1>O Exterminador do Futuro 2</h1>
+            <button id="btn-diretor">Diretor</button>
+        </div>
+    </div>
+
+    <div id="modal-sinopse" class="modal">
+        <div class="modal-content modal-terminator">
+            <h2>Sinopse</h2>
+            <p>O jovem John Connor é alvo de um exterminador avançado de metal líquido, o T-1000. Para protegê-lo, a resistência envia um T-800 reprogramado, dando início a uma perseguição explosiva pelo destino da humanidade.</p>
+            <button class="close-btn" id="close-sinopse">ABORTAR MISSÃO</button>
+        </div>
+    </div>
+
+    <div id="modal-diretor" class="modal">
+        <div class="modal-content modal-terminator">
+            <h2>James Cameron</h2>
+            <p>James Cameron revolucionou o cinema com 'O Exterminador do Futuro 2: O Julgamento Final' (1991), sendo pioneiro na utilização de computação gráfica para criar o vilão de metal líquido e consagrando o filme como um clássico de ação.</p>
+            <button class="close-btn" id="close-diretor">ABORTAR MISSÃO</button>
+        </div>
     </div>
 
 </body>
