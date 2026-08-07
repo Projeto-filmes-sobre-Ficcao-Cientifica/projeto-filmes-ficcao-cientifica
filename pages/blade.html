@@ -1,22 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blade Runner</title>
     <link rel="stylesheet" href="/style/blade.css">
+    <script src="/pages/blade.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1>Blade Runner</h1>
-        </div>
-        <div>
+    </div>
+    
+    <div>
         <main>
             <footer>
-                 <button id="btn-advice">Sinopse</button>
-                 <button id="btn-advice">Diretor</button>
+                <button id="btn-sinopse">Sinopse</button>
+                <button id="btn-diretor">Diretor</button>
             </footer>
         </main>
+    </div>
+
+    <div id="modal-sinopse" class="modal">
+        <div class="modal-content modal-cyberpunk">
+            <h2>Sinopse</h2>
+            <p>No século 21, uma corporação desenvolve clones humanos chamados Replicantes para trabalho escravo no espaço. Quando um grupo de fugitivos escapa para Los Angeles, o caçador de recompensas Rick Deckard é encarregado de eliminá-los.</p>
+            <button class="close-btn" id="close-sinopse">// FECHAR</button>
+        </div>
+    </div>
+
+    <div id="modal-diretor" class="modal">
+        <div class="modal-content modal-cyberpunk">
+            <h2>Ridley Scott</h2>
+            <p>Lançado em 1982 e dirigido por Ridley Scott, 'Blade Runner' tornou-se uma das obras neo-noir e cyberpunk mais cultuadas de todos os tempos, definindo o visual de um futuro distópico no cinema.</p>
+            <button class="close-btn" id="close-diretor">// FECHAR</button>
+        </div>
     </div>
 
 </body>

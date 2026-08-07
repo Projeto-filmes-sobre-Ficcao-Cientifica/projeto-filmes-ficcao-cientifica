@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
 body {  
      margin: 10;
     padding: 10px;
@@ -26,9 +27,9 @@ body {
 
 h1 {    
    
-    color: rgb(255, 0, 0);    
+    color: rgb(255, 255, 255);    
     font-size: 50px;    
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, serif;    
+    font-family: "Montaga", serif;  
     text-shadow: 0 0 10px rgba(46, 41, 36, 0.81);
     
 }
@@ -59,13 +60,87 @@ footer button {
     font-size: 20px;
     cursor: pointer;
     transition: 0.3s;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Montaga", serif; 
     }
 
 footer button {
-    background-color: #ffffff;
-    color: #040e21;
+    background-color: #780909;
+    color: #ffffff;
     transform: scale(1.05);
     
 }
 
+.modal {
+    display: none !important; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(5, 2, 12, 0.85); 
+    z-index: 9999;
+}
+
+.modal.active {
+    display: flex !important;
+    justify-content: flex-end; 
+    align-items: center;     
+}
+
+.modal-content.modal-cyberpunk {
+    margin-right: 20px;
+    width: 90%;
+    max-width: 420px;
+    background-color: #0b0612;
+    border-left: 3px solid #ff0055;
+    border-right: 3px solid #00f0ff;
+    padding: 35px 30px;
+    box-shadow: 0 0 25px rgba(255, 0, 85, 0.4);
+    position: relative;
+    
+    clip-path: polygon(
+        0 25px, 25px 0, 
+        100% 0, 100% calc(100% - 25px), 
+        calc(100% - 25px) 100%, 0 100%
+    );
+}
+
+.modal-cyberpunk h2 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #00f0ff;
+    font-family: Impact, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #ff0055;
+    padding-bottom: 8px;
+}
+
+.modal-cyberpunk p {
+    color: #e5d4ed;
+    line-height: 1.6;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 20px 0;
+}
+
+
+.close-btn {
+    background-color: #ff0055;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 0, 85, 0.6);
+}
+
+.close-btn:hover {
+    background-color: #00f0ff;
+    color: #000000;
+    box-shadow: 0 0 15px #00f0ff;
+}
