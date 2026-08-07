@@ -1,37 +1,38 @@
-// Referências do Modal 1 (Sinopse)
-const modalSinopse = document.getElementById("modal-sinopse");
-const btnSinopse = document.getElementById("btn-sinopse");
-const closeSinopse = document.getElementById("close-sinopse");
 
-// Referências do Modal 2 (Diretor)
-const modalDiretor = document.getElementById("modal-diretor");
-const btnDiretor = document.getElementById("btn-diretor");
-const closeDiretor = document.getElementById("close-diretor");
+    document.addEventListener("DOMContentLoaded", () => {
+   
+    const btnSinopse = document.getElementById("btn-sinopse");
+    const btnDiretor = document.getElementById("btn-diretor");
 
-// Abrir Modais
-btnSinopse.onclick = function() {
-    modalSinopse.style.display = "block";
-}
+    const modalSinopse = document.getElementById("modal-sinopse");
+    const modalDiretor = document.getElementById("modal-diretor");
 
-btnDiretor.onclick = function() {
-    modalDiretor.style.display = "block";
-}
+    const closeSinopse = document.getElementById("close-sinopse");
+    const closeDiretor = document.getElementById("close-diretor");
 
-// Fechar nos botões (X)
-closeSinopse.onclick = function() {
-    modalSinopse.style.display = "none";
-}
 
-closeDiretor.onclick = function() {
-    modalDiretor.style.display = "none";
-}
+    btnSinopse.addEventListener("click", () => {
+        modalSinopse.style.display = "block";
+    });
 
-// Fechar ao clicar fora da janela do modal
-window.onclick = function(event) {
-    if (event.target === modalSinopse) {
+    
+    btnDiretor.addEventListener("click", () => {
+        modalDiretor.style.display = "block";
+    });
+
+    
+    closeSinopse.addEventListener("click", () => {
         modalSinopse.style.display = "none";
-    }
-    if (event.target === modalDiretor) {
+    });
+
+    
+    closeDiretor.addEventListener("click", () => {
         modalDiretor.style.display = "none";
-    }
-}
+    });
+
+    
+    window.addEventListener("click", (event) => {
+        if (event.target === modalSinopse) modalSinopse.style.display = "none";
+        if (event.target === modalDiretor) modalDiretor.style.display = "none";
+    });
+});
