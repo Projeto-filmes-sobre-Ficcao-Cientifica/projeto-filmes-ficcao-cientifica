@@ -30,4 +30,10 @@ O principal objetivo deste projeto é servir como uma **atividade prática para 
 - O Exterminador do Futuro
 - Metrópolis
 - Contatos Imediatos de Terceiro Grau
----
+
+## Desenvolvedores
+[Valentina Senger Spinelli](https://www.linkedin.com/in/valentina-senger-spinelli-53802b325/), 
+[Miguel Lopes](https://www.linkedin.com/in/miguel-lopes-gomes-1a1ba7368/)
+
+## Instrutor
+[Vedilson Prado](https://www.linkedin.com/in/vedilson/)
