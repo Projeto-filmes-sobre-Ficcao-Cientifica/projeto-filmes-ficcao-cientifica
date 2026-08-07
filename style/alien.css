@@ -4,8 +4,10 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+
     display: flex;
     flex-direction: column;
+
     background-image: url("https://i.pinimg.com/originals/75/ed/8e/75ed8e2fecca259349675d41290ffecd.gif");
     background-size: cover;
     background-position: center;
@@ -14,6 +16,7 @@ body {
 
 .container {
     flex: 1;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,37 +26,53 @@ h1 {
     color: white;
     font-size: 50px;
     font-family: "Montaga", serif;
+
     text-shadow: 0 0 10px rgba(46, 41, 36, 0.81);
+
     text-align: center;
 }
+
+
+
 
 footer {
     width: 100%;
     height: 70px;
+
     background-color: #040e21;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     gap: 20px;
 }
 
 footer button {
     padding: 10px 20px;
+
     border: none;
     border-radius: 8px;
+
     background-color: rgb(40, 40, 40);
     color: #8a888f;
+
     font-size: 16px;
+
     cursor: pointer;
+
     transition: 0.3s;
+
     font-family: "Montaga", serif;
 }
 
 footer button:hover {
     background-color: #f5f5f5;
     color: #040e21;
+
     transform: scale(1.05);
 }
+<<<<<<< HEAD
 * Base para todos os modais */
 .modal {
     display: none; /* Oculto por padrão */
@@ -66,17 +85,52 @@ footer button:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
     color: white;
     font-family: "Montaga", serif;
+=======
+
+
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 1000;
+
+    width: 320px;
+
+    background-color: rgba(4, 14, 33, 0.95);
+
+    border: 1px solid #8a888f;
+
+    border-radius: 12px;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+
+    color: white;
+
+    font-family: "Montaga", serif;
+
+>>>>>>> feature/css-alien
     animation: fadeIn 0.3s ease-in-out;
 }
 
 
+<<<<<<< HEAD
 .modal-content {
     padding: 20px;
+=======
+
+
+.modal-content {
+    padding: 20px;
+
+>>>>>>> feature/css-alien
     position: relative;
 }
 
 .modal-content h2 {
     margin-top: 0;
+<<<<<<< HEAD
     color: #f5f5f5;
 }
 
@@ -87,6 +141,31 @@ footer button:hover {
     font-size: 24px;
     color: #8a888f;
     cursor: pointer;
+=======
+
+    color: #f5f5f5;
+}
+
+.modal-content p {
+    line-height: 1.5;
+}
+
+
+
+
+.close-btn {
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    font-size: 24px;
+
+    color: #8a888f;
+
+    cursor: pointer;
+
+>>>>>>> feature/css-alien
     transition: 0.2s;
 }
 
@@ -95,25 +174,48 @@ footer button:hover {
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> feature/css-alien
 #modal-sinopse {
     bottom: 90px;
     left: 20px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/css-alien
 #modal-diretor {
     bottom: 90px;
     right: 20px;
 }
 
 
+<<<<<<< HEAD
 @keyframes fadeIn {
+=======
+/* ANIMAÇÃO */
+
+@keyframes fadeIn {
+
+>>>>>>> feature/css-alien
     from {
         opacity: 0;
         transform: translateY(10px);
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> feature/css-alien
     to {
         opacity: 1;
         transform: translateY(0);
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> feature/css-alien
 }
