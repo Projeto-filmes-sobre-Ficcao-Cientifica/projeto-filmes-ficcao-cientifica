@@ -1,23 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2001: Uma Odisséia no Espaço</title>
     <link rel="stylesheet" href="/style/odisseia.css">
+    <script src="/script/odisseia.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1>2001: Uma Odisséia no Espaço</h1>
-        </div>
-        <div>
+    </div>
+    <div>
         <main>
             <footer>
-                 <button id="btn-advice">Sinopse</button>
-                 <button id="btn-advice">Diretor</button>
+
+                <button id="btn-sinopse">Sinopse</button>
+                <button id="btn-diretor">Diretor</button>
             </footer>
         </main>
     </div>
-    
+
+    <div id="modal-sinopse" class="modal">
+        <div class="modal-content modal-monolith">
+            <div class="hal-eye"></div>
+            <h2>Sinopse</h2>
+            <p>Após a descoberta de um misterioso monólito negro enterrado na Lua, uma expedição é enviada a Júpiter a bordo da nave Discovery 1. A missão é controlada pelo supercomputador HAL 9000, que começa a apresentar comportamentos imprevisíveis e ameaçadores.</p>
+            <button class="close-btn" id="close-sinopse">DESATIVAR HAL</button>
+        </div>
+    </div>
+
+    <div id="modal-diretor" class="modal">
+        <div class="modal-content modal-monolith">
+            <div class="hal-eye"></div>
+            <h2>Stanley Kubrick</h2>
+            <p>Stanley Kubrick foi um dos diretores mais genial e perfeccionistas da história do cinema. Lançado em 1968, '2001' redefiniu o gênero de ficção científica com seus efeitos revolucionários, realismo científico e reflexões filosóficas sobre a evolução humana.</p>
+            <button class="close-btn" id="close-diretor">DESATIVAR HAL</button>
+        </div>
+    </div>
+
 </body>
 </html>
